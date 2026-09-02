@@ -47,12 +47,29 @@ const gmapsUrl = "https://maps.google.com/?q=Jl.+Cihampelas+No.+88+Bandung";
         <p class="text-xs sm:text-sm text-[#2F443A] font-medium leading-relaxed">Area Parkir Mobil &amp; Motor, AC, Coffee Bar, Free Wi-Fi, &amp; Ruang Tunggu Estetik Tenang.</p>
       </div>
 
+      <!-- Embed Google Maps -->
+      <div class="pt-5 border-t border-[#F0F4F2]">
+        <div class="rounded-2xl overflow-hidden border border-[#E5ECE8] h-48 sm:h-56">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.985223363365!2d107.6019253!3d-6.8923761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e65a0dbf03b1%3A0x7d87b1c3125e9854!2sJl.%20Cihampelas%20No.88%2C%20Bandung!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Peta Lokasi Rasi Dental Studio Cihampelas Bandung"
+          ></iframe>
+        </div>
+      </div>
+
       <!-- Buttons -->
       <div class="pt-5 border-t border-[#F0F4F2] flex flex-col sm:flex-row gap-3.5">
         <a
           href={gmapsUrl}
           target="_blank"
           rel="noopener noreferrer"
+          data-sumber="lokasi-gmaps-link"
           aria-label="Buka lokasi Rasi Dental Studio di Google Maps"
           class="flex-1 py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-center text-[#1A2421] bg-[#FAF8F5] hover:bg-[#F3F0E8] border border-[#D8E0DC] transition-all flex items-center justify-center gap-2"
         >
@@ -64,12 +81,10 @@ const gmapsUrl = "https://maps.google.com/?q=Jl.+Cihampelas+No.+88+Bandung";
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
+          data-sumber="lokasi-wa-link"
           aria-label="Tanya Patokan Lokasi dan Parkir Rasi Dental Studio via WhatsApp"
           class="flex-1 py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-center text-white bg-[#0D4736] hover:bg-[#072E23] transition-colors flex items-center justify-center gap-2 shadow-xs"
         >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-          <span>Tanya Patokan &amp; Parkir</span>
-        </a>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           <span>Tanya Patokan &amp; Parkir</span>
         </a>
