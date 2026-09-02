@@ -41,17 +41,17 @@ const reviews = [
       <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A2421] tracking-tight leading-tight">
         Pengalaman Nyata <span class="italic font-normal text-[#0D4736]">Pasien Rasi Studio</span>
       </h2>
-      <p class="mt-3 text-xs sm:text-base text-[#52665E] font-normal leading-relaxed">
-        Ulasan langsung dari pasien di Bandung yang mempercayakan perawatan behel &amp; veneer di studio kami.
+      <p class="mt-3 text-xs sm:text-base text-[#1A2421] font-semibold leading-relaxed">
+        Ulasan jujur dari pasien yang telah merasakan perawatan behel ortodonti, veneer, dan whitening di studio kami.
       </p>
     </div>
 
-    <!-- Reviews Cards Grid -->
+    <!-- Testimonials Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
       {reviews.map((rev) => (
-        <div class="rounded-3xl p-6 sm:p-8 bg-white border border-[#E5ECE8] flex flex-col justify-between relative shadow-2xs hover:border-[#CBD9D2] transition-all">
+        <div class="rounded-3xl p-6 sm:p-7 bg-white border border-[#E5ECE8] shadow-2xs flex flex-col justify-between hover:border-[#CBD9D2] transition-all">
           <div>
-            <!-- Star Ratings -->
+            <!-- Star Rating -->
             <div class="flex items-center gap-1 mb-4">
               {[...Array(rev.rating)].map(() => (
                 <svg class="w-4 h-4 text-[#D97706] fill-[#D97706]" viewBox="0 0 20 20">
@@ -65,8 +65,8 @@ const reviews = [
               {rev.treatment}
             </span>
 
-            <!-- Review Content -->
-            <p class="text-xs sm:text-sm text-[#3D4F46] leading-relaxed mb-6 italic font-normal">
+            <!-- Quote Text -->
+            <p class="text-xs sm:text-sm text-[#1A2421] leading-relaxed mb-6 italic font-medium">
               "{rev.text}"
             </p>
           </div>
@@ -75,14 +75,13 @@ const reviews = [
           <div class="pt-4 border-t border-[#F0F4F2] flex items-center justify-between">
             <div>
               <p class="font-serif text-sm font-bold text-[#1A2421]">{rev.name}</p>
-              <p class="text-[11px] text-[#667A71] font-normal">{rev.role}</p>
+              <p class="text-[11px] text-[#1A2421] font-semibold">{rev.role}</p>
             </div>
-            <span class="text-[10px] text-[#8AA89B] font-normal">{rev.date}</span>
+            <span class="text-[10px] text-[#1A2421] font-semibold">{rev.date}</span>
           </div>
         </div>
       ))}
     </div>
-
   </div>
 </section>
 
