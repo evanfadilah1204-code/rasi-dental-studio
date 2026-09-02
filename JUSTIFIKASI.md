@@ -46,7 +46,7 @@
 | **Alur Kunjungan** | Takut Bingung Prosedur | Sebelum Lokasi | 4 langkah linier dari reservasi WA hingga kontrol berkala. |
 | **Lokasi & Jam Praktek** | Aksesibilitas Tempat | Dekat Penutup | Memuat alamat rinci, jam buka (Selasa-Minggu 11.00-21.00), dan iframe Google Maps `loading="lazy"`. |
 | **FAQ** | Keraguan Sisa Pasien | Sebelum CTA Penutup | Accordion ringkas menjawab 5 pertanyaan paling sering ditanyakan pasien. |
-| **CTA Penutup** | Kejelasan Langkah Reservasi | Penutup Halaman | Card putih bersih dengan tombol langsung ke WhatsApp tanpa form rumit. |
+| **Form Reservasi** | Kejelasan Langkah &amp; Kemudahan | Sebelum Penutup Halaman | Card form interaktif ringkas (Nama, WA, Perawatan, Dokter, Tanggal, Jam, Catatan) yang langsung mengarahkan isi formulir ke WhatsApp Admin. |
 | **Footer** | Kepatuhan Informasi & Legal | Paling Bawah | Menyajikan hak cipta, alamat, jam operasional, dan penjelas STR contoh. |
 | **Floating WA** | Aksesibilitas Cepat Mobile | Melayang Kanan Bawah (Mobile) | Tombol melayang hijau zamrud dengan teks "Chat Admin Studio". |
 
