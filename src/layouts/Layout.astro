@@ -67,8 +67,9 @@ const schemaData = {
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
-    <!-- Self-hosted Font Preloads -->
+    <!-- Critical Preloads for Instant LCP -->
     <link rel="preload" href="/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/images/hero_dental_studio.webp" as="image" type="image/webp" fetchpriority="high" />
     
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
