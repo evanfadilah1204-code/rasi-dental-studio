@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import ServicesPricing from '../components/ServicesPricing.astro';
+import ObjectionHandling from '../components/ObjectionHandling.astro';
+import Testimonials from '../components/Testimonials.astro';
+import ServicesOverview from '../components/ServicesOverview.astro';
+import Doctors from '../components/Doctors.astro';
+import PatientFlow from '../components/PatientFlow.astro';
+import LocationHours from '../components/LocationHours.astro';
+import FAQ from '../components/FAQ.astro';
+import BookingForm from '../components/BookingForm.astro';
+import Footer from '../components/Footer.astro';
+import FloatingWA from '../components/FloatingWA.astro';
+---
+
+<Layout 
+  title="Rasi Dental Studio | Dental & Aesthetic Studio Bandung (Behel & Veneer)"
+  description="Klinik gigi modern Rasi Dental Studio di Jl. Cihampelas No. 88 Bandung. Spesialis behel & veneer untuk anak muda dengan transparansi biaya 100% tanpa biaya tersembunyi."
+>
+  <!-- 1. Nav -->
+  <Navbar />
+  
+  <main id="main-content">
+    <!-- 2. Hero -->
+    <Hero />
+
+    <!-- 3. Harga -->
+    <ServicesPricing />
+
+    <!-- 4. Penanganan keberatan (Kenyamanan Pasien) -->
+    <ObjectionHandling />
+
+    <!-- 5. Testimonial / Ulasan Pasien -->
+    <Testimonials />
+
+    <!-- 6. Layanan -->
+    <ServicesOverview />
+
+    <!-- 7. Dokter dan kredensial -->
+    <Doctors />
+
+    <!-- 8. Alur kunjungan -->
+    <PatientFlow />
+
+    <!-- 9. Lokasi dan jam praktek -->
+    <LocationHours />
+
+    <!-- 10. FAQ -->
+    <FAQ />
+
+    <!-- 11. CTA penutup & Booking -->
+    <BookingForm />
+  </main>
+
+  <!-- 12. Footer -->
+  <Footer />
+
+  <!-- 13. Tombol WhatsApp melayang (mobile saja) -->
+  <FloatingWA />
+</Layout>
+

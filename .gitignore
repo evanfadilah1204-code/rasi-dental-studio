@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+/.pnpm-store
+
+# build output
+/dist
+/.astro
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# logs & cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.zip

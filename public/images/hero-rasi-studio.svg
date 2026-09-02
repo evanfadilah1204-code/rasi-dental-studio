@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" class="w-full h-full object-cover">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c18" />
+      <stop offset="50%" stop-color="#1a2520" />
+      <stop offset="100%" stop-color="#0f1512" />
+    </linearGradient>
+
+    <!-- Warm Accent Glow -->
+    <radialGradient id="warmGlow" cx="60%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#3d5a49" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#2c3e33" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#141c18" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="goldGlow" cx="80%" cy="30%" r="35%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#141c18" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glass card overlay gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+  <rect width="1200" height="800" fill="url(#warmGlow)" />
+  <rect width="1200" height="800" fill="url(#goldGlow)" />
+
+  <!-- Architectural Grid / Studio Lounge Graphic -->
+  <g opacity="0.15">
+    <line x1="100" y1="0" x2="100" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+    <line x1="300" y1="0" x2="300" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+    <line x1="500" y1="0" x2="500" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+    <line x1="700" y1="0" x2="700" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+    <line x1="900" y1="0" x2="900" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+    <line x1="1100" y1="0" x2="1100" y2="800" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 8" />
+  </g>
+
+  <!-- Aesthetic Studio Lounge Composition -->
+  <!-- Warm Architectural Wall Panel -->
+  <path d="M650 150 L1150 150 Q1170 150 1170 170 L1170 730 Q1170 750 1150 750 L650 750 Q630 750 630 730 L630 170 Q630 150 650 150 Z" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+
+  <!-- Soft Studio Light Arc -->
+  <path d="M700 200 C850 120 1000 120 1100 200" fill="none" stroke="#2a4536" stroke-width="4" opacity="0.6" />
+  <path d="M720 220 C850 150 980 150 1080 220" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.4" />
+
+  <!-- Aesthetic Dental Smile Symbol / Studio Emblem Graphic -->
+  <g transform="translate(900, 360)">
+    <!-- Outer Ring -->
+    <circle r="140" fill="none" stroke="#2c3e33" stroke-width="3" />
+    <circle r="140" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="40 20 80 20" opacity="0.7" />
+    <circle r="110" fill="rgba(27, 43, 34, 0.5)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+
+    <!-- Aesthetic Tooth/Smile Icon with Sparkle -->
+    <path d="M-40 -20 C-40 -45 -20 -60 0 -60 C20 -60 40 -45 40 -20 C40 25 25 50 15 65 C8 75 0 75 -5 75 C-10 75 -18 75 -25 65 C-35 50 -40 25 -40 -20 Z" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Inner Aesthetic Sparkle Accent -->
+    <path d="M-12 -15 Q0 -40 12 -15 Q40 0 12 15 Q0 40 -12 15 Q-40 0 -12 -15 Z" fill="#d4af37" opacity="0.9" />
+
+    <circle cx="50" cy="-50" r="4" fill="#ffffff" />
+    <path d="M50 -60 L50 -40 M40 -50 L60 -50" stroke="#ffffff" stroke-width="1.5" />
+    
+    <circle cx="-55" cy="40" r="3" fill="#d4af37" />
+  </g>
+
+  <!-- Doctor & Specialty Info Badges (Graphics) -->
+  <g transform="translate(670, 220)">
+    <rect width="260" height="70" rx="14" fill="rgba(15, 21, 18, 0.85)" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <circle cx="35" cy="35" r="18" fill="#24362b" />
+    <text x="35" y="40" text-anchor="middle" fill="#d4af37" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">drg</text>
+    <text x="68" y="32" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13">drg. Kirana Ayu Sp.Ort</text>
+    <text x="68" y="50" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="11">Spesialis Ortodonti (Sejak 2014)</text>
+  </g>
+
+  <g transform="translate(670, 310)">
+    <rect width="260" height="70" rx="14" fill="rgba(15, 21, 18, 0.85)" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <circle cx="35" cy="35" r="18" fill="#24362b" />
+    <text x="35" y="40" text-anchor="middle" fill="#22c55e" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">drg</text>
+    <text x="68" y="32" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13">drg. Bimo Prasetya</text>
+    <text x="68" y="50" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="11">Praktik Sejak 2018</text>
+  </g>
+
+  <g transform="translate(670, 580)">
+    <rect width="450" height="120" rx="20" fill="rgba(20, 28, 24, 0.9)" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1.5" />
+    <text x="30" y="42" fill="#d4af37" font-family="'Bricolage Grotesque', sans-serif" font-weight="700" font-size="16">FOKUS PERAWATAN ESTETIK</text>
+    <text x="30" y="70" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="18">Pemasangan Behel Presisi &amp; Veneer</text>
+    <text x="30" y="94" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="13">Suasana Studio Kafe Modern • Bebas Kesan Rumah Sakit</text>
+  </g>
+
+  <!-- Decorative Botanical Leaf Accents (Cafe/Studio Vibe) -->
+  <path d="M1120 750 C1140 700 1150 620 1110 550 C1090 580 1080 650 1120 750 Z" fill="#22382c" opacity="0.7" />
+  <path d="M1150 750 C1170 680 1180 600 1130 520 C1110 560 1100 640 1150 750 Z" fill="#2d4a3b" opacity="0.6" />
+</svg>

@@ -1,0 +1,72 @@
+---
+const waNumber = "6285891609894";
+const waMessage = encodeURIComponent("Halo Rasi Dental Studio, saya mau tanya konsultasi Behel & Veneer.");
+const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
+---
+
+<header class="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E5ECE8]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+    <!-- Brand Logo -->
+    <a href="#" class="flex items-center gap-3 group">
+      <div class="w-9 h-9 rounded-xl bg-[#0D4736] text-white flex items-center justify-center shadow-xs transition-transform group-hover:scale-105">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2C8.5 2 6 4.5 6 8c0 3.5 1.5 7.5 3.5 11 .8 1.4 1.5 2.5 2.5 3 1-.5 1.7-1.6 2.5-3C16.5 15.5 18 11.5 18 8c0-3.5-2.5-6-6-6zm0 17.5c-.8-.5-1.5-1.5-2.2-2.8C8.1 13.6 7 10.3 7 8c0-2.8 1.9-4.5 5-4.5s5 1.7 5 4.5c0 2.3-1.1 5.6-2.8 8.7-.7 1.3-1.4 2.3-2.2 2.8z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="font-serif font-bold text-lg text-[#1A2421] block leading-tight tracking-tight">Rasi Dental Studio</span>
+        <span class="text-[11px] text-[#52665E] font-medium tracking-wide uppercase block">Dental &amp; Aesthetic • Bandung</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-[#3D4F46]">
+      <a href="#biaya" class="hover:text-[#0D4736] transition-colors py-1">Harga &amp; Paket</a>
+      <a href="#layanan" class="hover:text-[#0D4736] transition-colors py-1">Layanan</a>
+      <a href="#dokter" class="hover:text-[#0D4736] transition-colors py-1">Dokter Gigi</a>
+      <a href="#alur" class="hover:text-[#0D4736] transition-colors py-1">Alur Kunjungan</a>
+      <a href="#lokasi" class="hover:text-[#0D4736] transition-colors py-1">Lokasi &amp; Jam</a>
+      <a href="#faq" class="hover:text-[#0D4736] transition-colors py-1">FAQ</a>
+    </nav>
+
+    <!-- Action Button -->
+    <div class="flex items-center gap-2.5">
+      <a 
+        href="#reservasi"
+        class="px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-white bg-[#0D4736] hover:bg-[#072E23] transition-all shadow-xs flex items-center gap-2"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span>Reservasi Jadwal</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <details class="md:hidden relative">
+        <summary class="p-2 rounded-xl bg-white border border-[#E5ECE8] text-[#1A2421] cursor-pointer list-none shadow-xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </summary>
+        <div class="absolute right-0 top-12 w-52 p-2 rounded-2xl bg-white border border-[#E5ECE8] shadow-xl flex flex-col gap-1 text-xs font-semibold z-50">
+          <a href="#reservasi" class="px-3.5 py-2.5 rounded-xl hover:bg-[#EAF2EE] text-[#0D4736] font-bold flex items-center gap-2">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Reservasi Jadwal
+          </a>
+          <a href="#biaya" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Estimasi Paket Harga</a>
+          <a href="#keberatan" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Kenyamanan Pasien</a>
+          <a href="#layanan" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Layanan Gigi Estetik</a>
+          <a href="#dokter" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Dokter Gigi</a>
+          <a href="#alur" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Alur Kunjungan</a>
+          <a href="#lokasi" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">Lokasi &amp; Jam Buka</a>
+          <a href="#faq" class="px-3.5 py-2 rounded-xl hover:bg-[#FAF8F5] text-[#1A2421]">FAQ</a>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+
+
+
+

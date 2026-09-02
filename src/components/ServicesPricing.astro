@@ -1,0 +1,217 @@
+---
+const waNumber = "6285891609894";
+const getWaUrl = (treatment: string) => {
+  const message = encodeURIComponent(`Halo Rasi Dental Studio, saya mau tanya rincian biaya paket ${treatment}.`);
+  return `https://wa.me/${waNumber}?text=${message}`;
+};
+---
+
+<section id="biaya" class="relative py-14 sm:py-20 bg-white border-t border-b border-[#E5ECE8]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#EAF2EE] text-[#0D4736] border border-[#CBD9D2] mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <span>Rincian Disampaikan Transparan di Awal</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A2421] tracking-tight leading-tight">
+        Estimasi Paket <span class="italic font-normal text-[#0D4736]">Behel &amp; Veneer</span>
+      </h2>
+      <p class="mt-3 text-xs sm:text-base text-[#52665E] font-normal leading-relaxed">
+        Seluruh perincian biaya dijelaskan secara utuh saat konsultasi awal tanpa ada biaya pendaftaran tersembunyi.
+      </p>
+    </div>
+
+    <!-- Pricing Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      
+      <!-- Card 1: Behel Ortodonti (Featured) -->
+      <div class="rounded-3xl p-6 sm:p-8 bg-[#FAF8F5] border-2 border-[#0D4736] relative flex flex-col justify-between shadow-sm">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#0D4736] text-white text-[11px] font-bold uppercase tracking-wider rounded-full shadow-xs">
+          Paling Banyak Dipilih
+        </div>
+
+        <div>
+          <div class="flex justify-between items-start mb-3 pt-2">
+            <div>
+              <span class="text-[11px] uppercase font-bold text-[#0D4736] tracking-wider">Ortodonti Presisi</span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#1A2421] mt-1">Paket Behel Aesthetic</h3>
+            </div>
+          </div>
+
+          <p class="text-xs text-[#52665E] mb-5 font-normal leading-relaxed">Braket Metal &amp; Sapphire Aesthetic ditangani langsung Dokter Spesialis Ortodonti.</p>
+
+          <div class="mb-6 p-4 rounded-2xl bg-white border border-[#E5ECE8]">
+            <span class="text-[11px] text-[#667A71] font-medium block mb-1">Estimasi Biaya Mulai:</span>
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl sm:text-3xl font-bold text-[#1A2421]">Rp 4.500.000</span>
+              <span class="text-xs text-[#667A71] font-normal">/ rahang</span>
+            </div>
+            <span class="text-[11px] text-[#0D4736] font-semibold block mt-1.5 flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Dapat dicicil bertahap setiap kontrol bulanan
+            </span>
+          </div>
+
+          <!-- Features Checklist -->
+          <ul class="space-y-3 text-xs text-[#2A3832] mb-6 font-medium">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#0D4736] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Konsultasi &amp; Cetak Gigi Estetik Presisi</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#0D4736] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Pemasangan Braket Presisi Minim Nyeri</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#0D4736] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Pembersihan Karang Gigi (Scaling) Awal</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#0D4736] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Instruksi Care &amp; Ortho Starter Kit</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href={getWaUrl("Behel Ortodonti")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-center text-white bg-[#0D4736] hover:bg-[#072E23] transition-all shadow-xs"
+        >
+          Konsultasi Behel Ortodonti
+        </a>
+      </div>
+
+      <!-- Card 2: Aesthetic Veneer -->
+      <div class="rounded-3xl p-6 sm:p-8 bg-white border border-[#E5ECE8] relative flex flex-col justify-between shadow-2xs hover:border-[#CBD9D2] transition-all">
+        <div>
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-[11px] uppercase font-bold text-[#B45309] tracking-wider">Estetika Senyum</span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#1A2421] mt-1">Veneer Porcelain / Composite</h3>
+            </div>
+          </div>
+
+          <p class="text-xs text-[#52665E] mb-5 font-normal leading-relaxed">Koreksi bentuk, warna, dan celah gigi depan untuk hasil senyum simetris natural.</p>
+
+          <div class="mb-6 p-4 rounded-2xl bg-[#FAF8F5] border border-[#EBE6DF]">
+            <span class="text-[11px] text-[#667A71] font-medium block mb-1">Estimasi Biaya Mulai:</span>
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl sm:text-3xl font-bold text-[#1A2421]">Rp 750.000</span>
+              <span class="text-xs text-[#667A71] font-normal">/ gigi</span>
+            </div>
+            <span class="text-[11px] text-[#854D0E] font-semibold block mt-1.5">Direct Composite / Indirect E-Max Porcelain</span>
+          </div>
+
+          <!-- Features Checklist -->
+          <ul class="space-y-3 text-xs text-[#2A3832] mb-6 font-medium">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Desain Shade Warna Senyum Natural</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Penanganan Minimal Invasif (Struktur Gigi Aman)</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Garansi Penyesuaian Gigitan Pasca Tindakan</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Polishing Kilau Tinggi Tahan Lama</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href={getWaUrl("Aesthetic Veneer")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-center text-[#1A2421] bg-[#FAF8F5] hover:bg-[#F3F0E8] border border-[#D8E0DC] transition-all"
+        >
+          Konsultasi Veneer Gigi
+        </a>
+      </div>
+
+      <!-- Card 3: Whitening & Scaling -->
+      <div class="rounded-3xl p-6 sm:p-8 bg-white border border-[#E5ECE8] relative flex flex-col justify-between shadow-2xs hover:border-[#CBD9D2] transition-all">
+        <div>
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-[11px] uppercase font-bold text-[#047857] tracking-wider">Pembersihan &amp; Brightening</span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#1A2421] mt-1">Whitening &amp; Scaling</h3>
+            </div>
+          </div>
+
+          <p class="text-xs text-[#52665E] mb-5 font-normal leading-relaxed">Pembersihan karang gigi ultrasonik &amp; pemutihan gigi cerah instan.</p>
+
+          <div class="mb-6 p-4 rounded-2xl bg-[#FAF8F5] border border-[#EBE6DF]">
+            <span class="text-[11px] text-[#667A71] font-medium block mb-1">Estimasi Biaya Mulai:</span>
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl sm:text-3xl font-bold text-[#1A2421]">Rp 350.000</span>
+              <span class="text-xs text-[#667A71] font-normal">/ sesi</span>
+            </div>
+            <span class="text-[11px] text-[#047857] font-semibold block mt-1.5">In-Office Bleaching &amp; Scaling Ultrasonik</span>
+          </div>
+
+          <!-- Features Checklist -->
+          <ul class="space-y-3 text-xs text-[#2A3832] mb-6 font-medium">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#047857] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Pembersihan Noda Teh, Kopi &amp; Karang Gigi</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#047857] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Aplikasi Pelindung Gusi &amp; Enamel Gigi</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#047857] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Proses Cepat 45 – 60 Menit Minim Ngilu</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#047857] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Hasil Terlihat Langsung Pasca Perawatan</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href={getWaUrl("Teeth Whitening & Scaling")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold text-center text-[#1A2421] bg-[#FAF8F5] hover:bg-[#F3F0E8] border border-[#D8E0DC] transition-all"
+        >
+          Booking Whitening &amp; Scaling
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Callout Box -->
+    <div class="mt-10 p-6 sm:p-8 rounded-3xl bg-[#FAF8F5] border border-[#E5ECE8] flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="font-serif text-lg sm:text-xl font-bold text-[#1A2421]">Butuh Estimasi Biaya Perawatan Spesifik Lainnya?</h4>
+        <p class="text-xs sm:text-sm text-[#52665E] font-normal mt-1">Tim admin medis kami siap memberikan rincian lengkap estimasi rontgen gigi, penambalan, atau pencabutan.</p>
+      </div>
+
+      <a
+        href={getWaUrl("Rincian Biaya Spesifik")}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#0D4736] hover:bg-[#072E23] transition-colors whitespace-nowrap text-center shrink-0 shadow-xs"
+      >
+        Minta Rincian Biaya via WA
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+

@@ -1,0 +1,95 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Rasi Dental Studio | Dental & Aesthetic Studio Bandung (Behel & Veneer)",
+  description = "Klinik gigi estetik modern di Jl. Cihampelas No. 88 Bandung. Spesialis pemasangan behel presisi dan veneer untuk anak muda dengan transparansi biaya 100% tanpa biaya tersembunyi."
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://rasidental.com');
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Rasi Dental Studio",
+  "image": "https://rasidental.com/images/hero-rasi-studio.svg",
+  "@id": "https://rasidental.com",
+  "url": "https://rasidental.com",
+  "telephone": "+6285891609894",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Cihampelas No. 88",
+    "addressLocality": "Bandung",
+    "addressRegion": "Jawa Barat",
+    "postalCode": "40131",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -6.8972,
+    "longitude": 107.6045
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    }
+  ],
+  "medicalSpecialty": [
+    "Orthodontics",
+    "CosmeticDentistry"
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Rasi Dental Studio Bandung" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- LocalBusiness Schema JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </head>
+  <body class="bg-[#FAF8F5] text-[#1A2421] min-h-screen flex flex-col font-sans selection:bg-[#EAF2EE] selection:text-[#0D4736] antialiased">
+    <slot />
+  </body>
+</html>
+
+

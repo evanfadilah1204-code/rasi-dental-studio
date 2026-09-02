@@ -1,0 +1,80 @@
+---
+const items = [
+  {
+    title: "Behel Ortodonti Presisi",
+    category: "Orthodontics",
+    result: "Gigi Rapi & Simetris",
+    beforeText: "Gigi Gingsul & Penumpukan",
+    afterText: "Lengkung Senyum Rapi Simetris",
+    desc: "Perataan susunan gigi rahang atas dan bawah dengan braket aesthetic presisi."
+  },
+  {
+    title: "Direct Aesthetic Veneer",
+    category: "Veneer Estetik",
+    result: "Hasil Natural Instan",
+    beforeText: "Gigi Berjarak & Kusam",
+    afterText: "Putih Natural & Simetris",
+    desc: "Penutupan celah gigi depan dan penyelarasan warna putih natural."
+  },
+  {
+    title: "Teeth Whitening Express",
+    category: "Pemutihan Gigi",
+    result: "Cerah Instan 45 Menit",
+    beforeText: "Noda Teh & Karang Gigi",
+    afterText: "Tampak 2-4 Tingkat Lebih Cerah",
+    desc: "Pembersihan karang gigi ultrasonik dan bleaching aman tanpa nyeri."
+  }
+];
+---
+
+<section id="transformasi" class="py-12 sm:py-16 bg-white border-t border-slate-200">
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 mb-2">
+        Hasil Perawatan
+      </span>
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+        Hasil Nyata <span class="text-emerald-700">Pasien Rasi</span>
+      </h2>
+      <p class="mt-2 text-xs sm:text-sm text-slate-600 font-medium">
+        Gambaran umum transformasi senyum pasien di studio kami.
+      </p>
+    </div>
+
+    <!-- Simple Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {items.map((item) => (
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 shadow-xs">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-2.5 py-0.5 rounded-md bg-white border border-slate-200 text-[11px] font-bold text-emerald-800">
+                {item.category}
+              </span>
+              <span class="text-xs font-extrabold text-amber-700">
+                ✓ {item.result}
+              </span>
+            </div>
+
+            <h3 class="font-extrabold text-base sm:text-lg text-slate-900 mb-1">{item.title}</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">{item.desc}</p>
+
+            <!-- Compact Comparison Bar -->
+            <div class="p-3 rounded-xl bg-white border border-slate-200 space-y-2 text-xs font-bold">
+              <div class="flex items-center justify-between text-slate-600">
+                <span class="text-[11px] font-medium">Kondisi Awal:</span>
+                <span class="text-red-700 bg-red-50 px-2 py-0.5 rounded">{item.beforeText}</span>
+              </div>
+              <div class="flex items-center justify-between text-slate-900 border-t border-slate-100 pt-1.5">
+                <span class="text-[11px] font-medium">Hasil Akhir:</span>
+                <span class="text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded font-black">✓ {item.afterText}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
