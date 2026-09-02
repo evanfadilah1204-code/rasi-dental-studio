@@ -93,14 +93,20 @@ const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
       <!-- Right Column: Studio Interior Image -->
       <div class="lg:col-span-5 relative">
         <div class="relative rounded-3xl overflow-hidden border border-[#D8E0DC] shadow-lg bg-white">
-          <img
-            src="/images/hero_dental_studio.jpg"
-            alt="Interior Rasi Dental Studio Bandung"
-            class="w-full h-80 sm:h-96 lg:h-[480px] object-cover"
-            loading="eager"
-          />
+          <picture>
+            <source srcset="/images/hero_dental_studio.webp" type="image/webp" />
+            <img
+              src="/images/hero_dental_studio.jpg"
+              alt="Interior Rasi Dental Studio Bandung"
+              width="600"
+              height="480"
+              fetchpriority="high"
+              decoding="async"
+              class="w-full h-80 sm:h-96 lg:h-[480px] object-cover"
+            />
+          </picture>
           
-          <!-- Authentic Studio Caption Tag (Replaces AI ✨ overlay) -->
+          <!-- Authentic Studio Caption Tag -->
           <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-[#1A2421]/90 backdrop-blur-md border border-white/10 text-white shadow-md flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-[#0D4736] flex items-center justify-center shrink-0">
               <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +115,7 @@ const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
             </div>
             <div>
               <span class="font-bold text-xs block text-white">Suasana Studio Café Estetik</span>
-              <span class="text-[11px] text-[#C4D4CD] block">Ruang tunggu tenang ber-AC, ramah &amp; nyaman di Bandung</span>
+              <span class="text-[11px] text-[#EAF2EE] block font-medium">Ruang tunggu tenang ber-AC, ramah &amp; nyaman di Bandung</span>
             </div>
           </div>
         </div>
