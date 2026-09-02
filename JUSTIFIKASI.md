@@ -1,67 +1,64 @@
-# DOKUMEN JUSTIFIKASI DESAIN & PENGEMBANGAN WEB
-## Rasi Dental Studio — Bandung (Behel & Veneer Aesthetic Studio)
+# Laporan Justifikasi Desain dan Pengembangan Website
+## Rasi Dental Studio (Bandung)
+
+### 1. Latar Belakang & Tujuan
+Website ini dibuat sebagai landing page resmi untuk **Rasi Dental Studio**, sebuah studio perawatan gigi estetik yang berlokasi di Jl. Cihampelas No. 88, Bandung. 
+
+Tujuan utama dari website ini adalah memberikan informasi yang jelas, transparan, dan terpercaya bagi calon pasien—khususnya anak muda dan mahasiswa di Bandung—yang ingin melakukan perawatan behel ortodonti, veneer gigi, maupun whitening tanpa perlu khawatir adanya biaya tersembunyi.
 
 ---
 
-### 1. RINGKASAN PROYEK & TUJUAN
-Proyek ini bertujuan untuk membangun website landing page modern, elegan, dan sangat terpercaya bagi **Rasi Dental Studio** di Jl. Cihampelas No. 88, Bandung. Website dirancang khusus untuk memikat calon pasien anak muda, mahasiswa, dan profesional di Bandung yang ingin melakukan perawatan gigi estetik (behel ortodonti, veneer, dan whitening) dengan transparansi estimasi biaya 100% di awal.
+### 2. Keputusan Desain & Estetika Visual
+
+Untuk menghasilkan tampilan yang unik, profesional, dan tidak terlihat seperti template buatan AI / generik, berikut beberapa keputusan desain yang diambil:
+
+* **Pilihan Tipografi (Font)**:
+  * Teks utama dan tombol menggunakan font **`Outfit`**, sebuah font sans-serif modern yang bersih dan sangat nyaman dibaca di layar smartphone maupun laptop.
+  * Untuk aksen judul section, digunakan font serif **`Playfair Display`** (*italic*) agar memberikan sentuhan elegan dan ramah khas studio perawatan estetik.
+
+* **Penggunaan SVG Icons (Bukan Emoji)**:
+  * Seluruh emoji yang sebelumnya terkesan ramai (seperti 🏥, 💉, 💰, 🙈, ✨, 📅, 🕒) diganti menggunakan **SVG Icons** bergaris tipis. Hal ini dilakukan agar tampilan terlihat lebih bersih, higienis, dan mencerminkan standar klinik kesehatan modern.
+
+* **Skema Warna Natural (Warm Studio)**:
+  * Menggunakan warna hijau *Forest Emerald* (`#0D4736`) sebagai warna utama untuk memberikan kesan medis yang tenang dan terpercaya.
+  * Latar belakang menggunakan warna *Warm Sand* (`#FAF8F5`) untuk menciptakan suasana yang hangat dan nyaman, tidak terkesan dingin seperti rumah sakit konvensional.
+
+* **Penyelarasan Bahasa & Bahasa Komunikasi**:
+  * Mengganti istilah "booking" menjadi **"Reservasi"** agar terdengar lebih sopan dan profesional dalam konteks pelayanan kesehatan.
 
 ---
 
-### 2. JUSTIFIKASI DESAIN & ESTETIKA (MENELIMINASI "LOOK AI")
-Untuk menghindari tampilan template generic khas AI (emoji spam, warna flat mencolok, dan tata letak kaku), berikut penyesuaian estetika yang diterapkan:
+### 3. Tampilan Responsif (Mobile & Desktop)
 
-1. **Sistem Tipografi Editorial & Humanis**:
-   - **Heading & UI**: Menggunakan Google Font **`Outfit`** (weight 400–800) yang memiliki geometri sans-serif modern, tajam, dan mewah—standar font studio kecantikan/estetika terkini.
-   - **Aksen Editorial**: Menggunakan **`Playfair Display`** (italic) pada kata kunci judul untuk memberikan impresi profesional, ramah, dan manusiawi.
-   - **Pembersihan Title Highlight Formulaik**: Menghapus pola warna dua kata di akhir judul yang di-highlight hijau secara kaku (khas prompt AI), digantikan dengan tipografi serif aksen yang alami.
+* **Tata Letak Adaptif**:
+  * Menggunakan CSS Grid responsif (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3`).
+  * Pada layar HP, kartu layanan dan harga otomatis menyusun ke **1 kolom vertikal** dengan ukuran tombol yang besar dan mudah di-tap dengan jempol.
+  * Pada layar laptop/desktop, layout melebar secara otomatis menjadi 3 kolom yang seimbang.
 
-2. **Pembersihan Emoji & Penggunaan SVG Icons**:
-   - Menghapus seluruh emoji kaku (seperti 🏥, 💉, 💰, 🙈, ✨, 📅, 🕒, 🛡️, 🎓, 📍, 💬, 🔒).
-   - Menggantinya dengan **SVG Icons** bergaris tipis profesional (*Feather/Heroicons style*) untuk menjamin kesan medis yang higienis, bersih, dan tepercaya.
-
-3. **Palet Warna "Warm Dental Studio"**:
-   - **Primary**: *Deep Forest Emerald* (`#0D4736`) — Memberikan kesan tenang, medis, dan eksklusif.
-   - **Background**: *Warm Sand* (`#FAF8F5`) — Menghindarkan kesan dingin/steril rumah sakit konvensional.
-   - **Accent & Badges**: *Soft Sage* (`#EAF2EE`) & *Muted Gold* (`#FEF3C7`) — Memberikan hierarki visual yang lembut dan mudah dipindai mata.
+* **Navigasi & Kemudahan Kontak**:
+  * Dilengkapi tombol melayang WhatsApp (*Floating WA*) di pojok kanan bawah agar calon pasien dapat dengan mudah menghubungi admin kapan saja.
+  * Formulir reservasi terhubung secara otomatis ke nomor WhatsApp resmi studio.
 
 ---
 
-### 3. JUSTIFIKASI TATA LETAK RESPONSIF (MOBILE & DESKTOP)
-1. **Pendekatan Mobile-First & Fluid Layout**:
-   - Menggunakan CSS Grid & Flexbox responsif (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3`).
-   - Pada layar smartphone (HP), kartu-kartu disusun menjadi **1 kolom vertikal** dengan ukuran font yang proporsional dan area sentuh tombol (*touch target*) yang nyaman di-tap dengan jempol.
-   - Pada layar laptop/desktop, layout melebar secara proporsional hingga 3–4 kolom.
+### 4. Struktur Halaman Utama
 
-2. **Pengalaman Pengguna (UX) & Navigasi**:
-   - Navigasi sticky header dengan menu drawer yang bersih di HP.
-   - Tombol reservasi WhatsApp melayang di pojok kanan bawah yang selalu siap membantu calon pasien dari halaman mana pun.
-   - Penghapusan istilah kaku dan penyelarasan kata kunci menjadi **"Reservasi"** untuk impresi layanan kesehatan yang sopan.
-
----
-
-### 4. STRUKTUR KOMPONEN & STRATEGI PEMASARAN MEDIS
-Website disusun menjadi 10 komponen terstruktur untuk membangun kepercayaan pasien (*Patient Trust Flow*):
-
-1. **Navbar**: Logo studio minimalis, navigasi halaman, dan tombol reservasi.
-2. **Hero Section**: Judul utama estetik, badge izin operasional Dinkes Kota Bandung, dan preview ringkasan estimasi biaya awal.
-3. **Services & Pricing**: 3 paket utama (Behel Aesthetic, Veneer Porcelain/Composite, Whitening & Scaling) lengkap dengan fitur, estimasi biaya transparan, dan opsi cicilan per kontrol.
-4. **Kenyamanan Pasien (Objection Handling)**: Mengatasi 3 ketakutan terbesar pasien (Takut Sakit, Takut Biaya Tersembunyi, Malu Konsultasi).
-5. **Ulasan Pasien (Social Proof)**: Menampilkan rating 4.9/5 Google Reviews dan testimoni nyata dari mahasiswa & profesional di Bandung.
-6. **Layanan Spesialis**: Rincian teknis penanganan ortodonti & estetika gigi.
-7. **Tim DokterMedik**: Profil `drg. Kirana Ayu, Sp.Ort` & `drg. Bimo Prasetya` beserta nomor STR resmi, lulusan universitas (UNPAD & UI), serta standar sterilisasi alat (*Autoclave Class B*).
-8. **Alur Kunjungan (Step-by-Step)**: 4 langkah praktis dari booking reservasi online hingga perawatan.
-9. **Lokasi & Jam Operasional**: Alamat Jl. Cihampelas No. 88 Bandung, integrasi Google Maps, dan informasi parkir.
-10. **FAQ Accordion & Form Reservasi**: Tanya jawab transparan dan formulir otomatis terhubung ke WhatsApp Resmi studio.
+Halaman dibuat mengalir secara sistematis untuk membangun kepercayaan calon pasien:
+1. **Header & Navbar**: Menu navigasi dan tombol reservasi cepat.
+2. **Hero Banner**: Penjelasan utama layanan studio, izin resmi Dinkes Bandung, dan ringkasan estimasi biaya awal.
+3. **Daftar Paket & Harga**: Estimasi biaya transparan untuk behel, veneer, dan whitening lengkap dengan keterangan opsi cicilan.
+4. **Pilar Kenyamanan Pasien**: Penjelasan mengenai penanganan minim nyeri, transparansi biaya, dan pelayanan ramah tanpa menghakimi.
+5. **Ulasan Pasien (Google Reviews 4.9/5)**: Testimoni dari mahasiswa dan profesional di Bandung.
+6. **Profil Dokter & Kredensial Medis**: Informasi mengenai dokter spesialis (alumni UNPAD & UI) serta jaminan sterilisasi alat medis (*Autoclave Class B*).
+7. **Alur Kunjungan & Lokasi**: 4 langkah praktis reservasi hingga lokasi studio di Cihampelas Bandung.
+8. **FAQ & Form Reservasi**: Pertanyaan umum dan form pemesanan jadwal langsung ke WA admin.
 
 ---
 
-### 5. JUSTIFIKASI TEKNIS & PERFORMA
-1. **Framework Astro v5 (Static Site Generation / SSG)**:
-   - Menghasilkan 0-JavaScript overhead di client side untuk komponen statis.
-   - Memastikan waktu muat halaman (*Largest Contentful Paint / LCP*) sangat cepat di koneksi HP.
-2. **SEO & Structured Data**:
-   - Dilengkapi meta tag Open Graph, Twitter Cards, serta `LocalBusiness Schema JSON-LD (Dentist)` untuk optimasi mesin pencari Google.
+### 5. Aspek Teknis & Performa
+
+* **Framework Astro v5**: Dipilih karena mampu menghasilkan halaman web yang sangat ringan dan cepat diakses di perangkat seluler (HP).
+* **Optimasi SEO**: Dilengkapi meta tag Open Graph dan Structured Data (`Schema.org Dentist`) agar lokasi studio mudah ditemukan di pencarian Google Maps dan search engine.
 
 ---
-*Dibuat oleh Tim Pengembang Rasi Dental Studio Bandung*
+**Rasi Dental Studio — Cihampelas, Bandung**
