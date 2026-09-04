@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="homeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D4736"/>
+      <stop offset="100%" stop-color="#072E23"/>
+    </linearGradient>
+    <linearGradient id="goldHome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#homeGrad)"/>
+  <!-- Roof and House Structure -->
+  <path d="M32 16L14 30V50C14 52.2 15.8 54 18 54H46C48.2 54 50 52.2 50 50V30L32 16Z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Door / Studio Entrance -->
+  <path d="M26 54V36H38V54" fill="none" stroke="url(#goldHome)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
